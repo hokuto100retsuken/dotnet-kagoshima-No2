@@ -1,0 +1,1 @@
+# dotnet-kagoshima-No2
