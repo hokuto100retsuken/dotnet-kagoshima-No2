@@ -1,0 +1,41 @@
+﻿@using System.Globalization
+
+@*コードブロック*@
+@{
+    var message = "Hello";
+}
+
+<div>
+    @CultureInfo.CurrentUICulture.DisplayName
+</div>
+
+<div>
+    @message
+</div>
+
+@{
+    var culture = CultureInfo.CurrentUICulture.DisplayName;
+    <text>Your culture @culture</text>
+}
+
+@* <body> *@
+@* <h2>My favorite</h2> *@
+@* <hr /> *@
+@* <table> *@
+@*     <thead> *@
+@*     <th>City</th> *@
+@*     <th>Count</th> *@
+@*     <th>Ever been there?</th> *@
+@*     </thead> *@
+@*     @foreach (var city in Model.Cities) *@
+@*     { *@
+@*         <tr> *@
+@*             <td>@city.Name</td> *@
+@*             <td>@city.Country</td> *@
+@*             <td>@city.Visited? "Yes" : "No"</td> *@
+@*         </tr> *@
+@*     } *@
+@* </table> *@
+@* *@
+@* </body> *@
+

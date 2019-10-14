@@ -28,6 +28,11 @@ namespace DotNetCoreSharp2Sandbox.Controllers
             return View();
         }
 
+        public IActionResult Sandbox()
+        {
+            return View();
+        }
+
         [ResponseCache(Duration = 0, Location = ResponseCacheLocation.None, NoStore = true)]
         public IActionResult Error()
         {

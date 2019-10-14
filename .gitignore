@@ -3,3 +3,5 @@
 ################################################################################
 
 /.vs/DotNetCoreSharp2Sandbox/v16
+/DotNetCoreSharp2Sandbox/bin
+/DotNetCoreSharp2Sandbox/obj
