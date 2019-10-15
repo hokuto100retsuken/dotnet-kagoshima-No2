@@ -1,6 +1,6 @@
 ﻿@using System.Globalization
 
-@*コードブロック*@
+@* コードブロック *@
 @{
     var message = "Hello";
 }
@@ -18,26 +18,25 @@
     <text>Your culture @culture</text>
 }
 
-@* <body> *@
-@* <h2>My favorite</h2> *@
-@* <hr /> *@
-@* <table> *@
-@*     <thead> *@
-@*     <th>City</th> *@
-@*     <th>Count</th> *@
-@*     <th>Ever been there?</th> *@
-@*     </thead> *@
-@*     @foreach (var city in Model.Cities) *@
-@*     { *@
-@*         <tr> *@
-@*             <td>@city.Name</td> *@
-@*             <td>@city.Country</td> *@
-@*             <td>@city.Visited? "Yes" : "No"</td> *@
-@*         </tr> *@
-@*     } *@
-@* </table> *@
-@* *@
-@* </body> *@
+@*  <body>  *@
+@*  <h2>My favorite</h2>  *@
+@*  <hr />  *@
+@*  <table>  *@
+@*      <thead>  *@
+@*      <th>City</th>  *@
+@*      <th>Count</th>  *@
+@*      <th>Ever been there?</th>  *@
+@*      </thead>  *@
+@*      @foreach (var city in Model.Cities)  *@
+@*      {  *@
+@*          <tr>  *@
+@*              <td>@city.Name</td>  *@
+@*              <td>@city.Country</td>  *@
+@*              <td>@city.Visited? "Yes" : "No"</td>  *@
+@*          </tr>  *@
+@*      }  *@
+@*  </table> *@
+@* </body>  *@
 
 @{
     var name = string.Empty;
@@ -46,3 +45,9 @@
 @Html.TextBox("Name", name)
 </div>
 
+@functions {
+    string GetMessage() {
+        return "Hello";
+    }    
+}
+<div>@GetMessage()</div>
